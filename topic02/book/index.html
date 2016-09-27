@@ -7,12 +7,12 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/solarized_light.min.css" rel="stylesheet" />
 
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
@@ -36,10 +36,6 @@ figcaption
   align-items: center;
 }
 
-.credits
-{
-  min-height:20px;
-}
 
 
     </style>
@@ -47,12 +43,6 @@ figcaption
   </head>
 
   <body>
-
-    
-
-
-
-  <div class="ui container">
     
 
 <style>
@@ -91,45 +81,71 @@ h3
 
 </style>
 
-<div class="ui fixed top pointing inverted menu labmenu">
-  <header class="header item">
-    <a href="../index.html">
-      <i class="sitemap icon"></i>
-      Enhanced Etity Relationship Modelling
-    </a>
-  </header>
-  <div class="right tab-menu menu">
-    
-      <a class="item" data-tab="Lab-02">
-        Lab-02
-      </a>
-    
-      <a class="item" data-tab="01">
-        01
-      </a>
-    
-      <a class="item" data-tab="02">
-        02
-      </a>
-    
-      <a class="item" data-tab="Exercises">
-        Exercises
-      </a>
-    
-    </div>
-</div>
 
-<br><br>
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01/book/index.html">
+          Lab-01
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic02/book/index.html">
+          Lab-02
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03/book/index.html">
+          Lab-03
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
 
-  
-  <div  class="ui tab segment lab" data-tab="Lab-02">
-    <h1>Objectives</h1>
+      <div class="ui fixed top pointing inverted menu labmenu">
+        <header class="header item">
+          <i id="toc" class="sitemap icon"></i>
+          <a href="../index.html">
+            Enhanced Etity Relationship Modelling
+          </a>
+        </header>
+        <div class="right tab-menu menu">
+          
+            <a class="item" data-tab="Lab-02">
+              Lab-02
+            </a>
+          
+            <a class="item" data-tab="01">
+              01
+            </a>
+          
+            <a class="item" data-tab="02">
+              02
+            </a>
+          
+            <a class="item" data-tab="Exercises">
+              Exercises
+            </a>
+          
+          </div>
+      </div>
+
+      <br><br>
+
+      
+      <div  class="ui tab segment lab" data-tab="Lab-02">
+        <h1>Objectives</h1>
 <p>This lab will put into practice the entity relationship diagraming you have seen in the lectures.</p>
 
-  </div>
- 
-  <div  class="ui tab segment lab" data-tab="01">
-    <h1>Entities, Instances, Attributes and Identifiers</h1>
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Entities, Instances, Attributes and Identifiers</h1>
 <ul>
 <li><p>Consider the entity STUDENT. You may have many students in a class but each individual student is a unique instance of the STUDENT entity.</p>
 </li>
@@ -165,10 +181,10 @@ appearing in each movie. Not all of our movies have star actors. Customers like
 to know each actor&#39;s real birth name and date of birth. We track only actors who 
 appear in the movies in our inventory.</p>
 
-  </div>
- 
-  <div  class="ui tab segment lab" data-tab="02">
-    <h1>ER Modelling Practice</h1>
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>ER Modelling Practice</h1>
 <h2>Read the given business scenario. Draw the entities HAIRSTYLIST and CLIENT.</h2>
 <p>List the attributes associated with each entity and specify whether they are mandatory or optional.
 Identify the UIDs. Follow the diagramming conventions discussed.</p>
@@ -182,10 +198,10 @@ hairstylist. If they have no preference, we assign one for them. Of course, they
 We are interested in tracking the daily appointments -- which stylist works on 
 which client during a given day.”</p>
 
-  </div>
- 
-  <div  class="ui tab segment lab" data-tab="Exercises">
-    <h1>ER practice</h1>
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>ER practice</h1>
 <h2>Read the given business scenario. Draw the entities BAND and MUSICIAN.</h2>
 <p>List the attributes underneath each entity. Specify whether they are mandatory or optional. Identify
 the UIDs. Write out the relationship in English, including optionality and cardinality.</p>
@@ -200,34 +216,25 @@ handled bands with the same name, so just to make sure I book the right
 band, I assign an ID to each one. The hourly rate for a band is the total of the 
 hourly rates of its members.</p>
 
+      </div>
+     
+    </div>
   </div>
- 
-
-
-<script>
-$('.ui.menu .item')
-  .tab({
-    history: true,
-    historyType: 'hash'
-  })
-;
-</script>
-
-   </div>
-
-   
-  <br><br>
-  <div class="ui bottom fixed borderless menu">
-    <div class="ui small item">
-    <p id="footertext">
-    Prepared by  Dr. Brenda Mullally (bmullally@wit.ie). Except where otherwise noted, this content is licensed under a
-     <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-       target="_blank">Creative Commons Attribution-NonCommercial 4.0 License
-     </a>
-     </p>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        Dr. Brenda Mullally (bmullally@wit.ie).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
     </div>
   </div>
 
+    <footer>
+
+    </footer>
     <script>
       
 $(document).ready(function()
@@ -248,10 +255,21 @@ $(document).ready(function()
   });
 
 
-})
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
 
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
 
     </script>
-
   </body>
+
  </html>
