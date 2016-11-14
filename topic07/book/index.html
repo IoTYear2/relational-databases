@@ -168,6 +168,12 @@ h3
         </a>
       
     
+      
+        <a class="item" href="../../topic09/book/index.html">
+          Lab-09
+        </a>
+      
+    
   </div>
   <div class="pusher">
     <div class="ui basic segment">
@@ -195,25 +201,26 @@ h3
 <p>Complete the GRADUATE table mapping chart. Credits is a foreign key column referencing the REQUIREMENTS table.</p>
 <p><img src="./img/02.png" alt=""></p>
 <p>Next on paper, write the syntax to create the graduates table.</p>
-<p>It is important to note that at this stage you have not learned the syntax for creating constraints. So you cannot add the primary key, foreign key, unique key, mandatory or other types of constraints yet.</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="03">
         <h1>Oracle Application Express</h1>
 <p>Login in to application express:</p>
-<p>Open a web browser and go to - <a href="https://iacademy.oracle.com/ords/">https://iacademy.oracle.com/ords/</a></p>
+<p>Open a web browser and go to - <a href="https://iacademy3.oracle.com">https://iacademy3.oracle.com</a></p>
 <p>Enter in the following:</p>
-<p>workspace: IE_A176
-username: IE_A176_SQL01_S01
-pasword: init00</p>
-<p>Where the username ends with two numbers given to you in class.</p>
-<p>You will have to change your password and return to the login screen to gain access using your new password.</p>
+<p>workspace: IE_A925_SQL_S##
+username: IE_A925_SQL_S##
+password : eFuTX64%</p>
+<p>You may have changed from your first password already.
+The username ends with two numbers given to you in class.</p>
 <p><img src="./img/05.png" alt=""></p>
 <p>Once you get access you should see the following:</p>
 <p><img src="./img/06.png" alt=""></p>
-<p>Click on SQL Commands and you should see:</p>
+<p>Click on SQL Workshop and you should see:</p>
 <p><img src="./img/03.png" alt=""></p>
+<p>Click on SQL Commands and you should see:</p>
+<p><img src="./img/11.png" alt=""></p>
 <p>You should have an SQL CREATE TABLE statement you can enter into the Commands box.</p>
 <pre><code>CREATE TABLE graduates
 ( student_id NUMBER(6),
@@ -223,11 +230,27 @@ pasword: init00</p>
   graduation_date DATE
 );</code></pre>
 <p> Click the Run button and you should receive a message in the results area to say Table careted. 0.01 seconds</p>
-<p> Now confirm the table exists by right clicking on the first button (Object Browser) choose open in a new tab. </p>
-<p>  <img src="./img/08.png" alt=""></p>
-<p>Go to that tab and when the table list loads in the left hand pane of the window, find the graduates table and click it to view the column details you just created.</p>
-<p><img src="./img/09.png" alt=""></p>
+<p> Now confirm the table exists by right clicking on the second tab (SQL Workshop) choose open in a new tab. </p>
+<p>Go to that tab and choose Object Browser from the SQL Workshop tab. When the table list loads in the left hand pane of the window, you should see the graduates table, click it to view the column details you just created.</p>
+<p>  <img src="./img/12.png" alt=""></p>
 <p> In order to run just one statement in the commands box without the other statements running you must highlight the statement you wish to run and click run. Otherwise clicking run will execute all SQL contained in the command box.</p>
+<h2>Creating tables using a script</h2>
+<p> Download the following file:</p>
+<ul>
+<li><archives/SQL_Schema.sql>
+
+</li>
+</ul>
+<p>In the SQL Workshop tab choose SQL Scripts</p>
+<p><img src="./img/13.png" alt=""></p>
+<p>Click Upload</p>
+<p><img src="./img/14.png" alt=""></p>
+<p>Click Browse and navigate to the file you just downloaded. Add a Script Name such as &quot;SQL to add all tables&quot;, leave the Character set as the default (Unicode UTF-8) and click Upload.</p>
+<p><img src="./img/15.png" alt=""></p>
+<p>You will now see the script listed.</p>
+<p><img src="./img/16.png" alt=""></p>
+<p>Click the run icon and then click Run Now. This will take you to the manage scripts results page. If you click view results you will see there are errors as the DROP statements failed because the tables did not already exist. This is fine you can ignore those errors.</p>
+<p>Next go to the Object Browser to confirm the tables are there.</p>
 
       </div>
      
