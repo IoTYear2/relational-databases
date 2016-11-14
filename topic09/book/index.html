@@ -8,13 +8,13 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/solarized_light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
       <style>
@@ -90,8 +90,8 @@ h3
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Lab-08">
-      Lab-08
+    <a class="item" data-tab="Lab-09">
+      Lab-09
     </a>
     
     <a class="item" data-tab="01">
@@ -106,9 +106,6 @@ h3
       03
     </a>
     
-    <a class="item" href="../../index.html">
-      <i class="home icon"></i>
-    </a>
   </div>
 </div>
 
@@ -158,14 +155,14 @@ h3
       
     
       
-        <a class="active item" href="../../topic08/book/index.html">
+        <a class="item" href="../../topic08/book/index.html">
           Lab-08
         </a>
       
     
       
         <a class="active item" href="../../topic09/book/index.html">
-          Lab-08
+          Lab-09
         </a>
       
     
@@ -174,50 +171,46 @@ h3
     <div class="ui basic segment">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Lab-08">
+      <div  class="ui tab segment lab" data-tab="Lab-09">
         <h1>Objectives</h1>
 <p>This lab will put into practice the CREATE TABLE statement for creating constraints.</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
-        <h1>Basic Constraints</h1>
-<p>Global Fast Foods has been very successful this past year and has opened several new stores. They need to add a table to their database to store information about each of their store’s locations. The owners want to make sure that all entries have an identification number, date opened, address, and city and that no other entry in the table can have the same email address. Based on this information, answer the following questions about the global_locations table. Use the table for your answers.</p>
-<p><img src="./img/01.png" alt=""></p>
+        <h1>SELECT Statement</h1>
+<p>The manager of Global Fast Foods would like to send out coupons for the upcoming sale. He wants to send one coupon to each household. Create the SELECT statement that returns the customer last name and a mailing address.</p>
+<p>Each statement below has errors. Correct the errors and execute the query in Oracle Application Express.</p>
 <ul>
-<li>What is a constraint?</li>
-<li>What are the limitations of constraints that may be applied at the column level and at the table level?</li>
-<li>Why is it important to give meaningful names to constraints?</li>
-<li>Based on the information provided, choose a datatype for each column. Indicate the length, precision, and scale for each NUMBER datatype.</li>
-<li>Write the CREATE TABLE statement for the Global Fast Foods locations table to define the constraints at the column level.</li>
-<li>Execute the statement in Oracle App Express.</li>
-<li>Rewrite the statement to define the UNIQUE constraint at the table level, do not execute this statement.</li>
+<li>SELECT first name FROM f_staffs;</li>
+<li>SELECT first_name |&quot; &quot;| last_name AS &quot;DJs on Demand Clients&quot; FROM d_clients;</li>
+<li>SELECT DISTINCT f_order_lines FROM quantity;</li>
+<li>SELECT order number FROM f_orders;</li>
 </ul>
+<p>Sue, Bob and Monique were the employees of the month. Using the f_staffs table, write a CREATE statement to display the results as shown below.</p>
+<p><img src="./img/01.png" alt=""></p>
+<p>Which is the following is TRUE about the following query?</p>
+<p>SELECT first_name, DISTINCT birthdate FROM f_staffs;</p>
+<ul>
+<li>Only two rows will be returned</li>
+<li>Four rows will be returned</li>
+<li>Only Fred 05-Jan-1988 and Lizzie 10-Mov-1987 will be returned</li>
+<li>No rows will be returned</li>
+</ul>
+<p>Global FAst Foods has decided to give all staff members a 5% pay rise. Write the SELECT statement that presents the output as shown below:</p>
+<p><img src="./img/02.png" alt=""></p>
+<p>The owners of DJs on Demand would like a report of all items in their D_CDs table with the following column headings: Inventory Item, CD Title, Music Producer, and Year Purchased. Write the SELECT statement to produce this report.</p>
+<p>There are four coding errors in this statement. Can you identify them?</p>
+<ul>
+<li>SELECT employee_id, last_name sal x 12 ANNUAL SALARY FROM employees;</li>
+</ul>
+<p>Click on the History tab at the lower part of the SQL Commands window. Scroll to find the SQL statment you used to generate the SuperStar output. Click on the SQL and it will load into the command window. Execute the command to ensure it is correct. Click on the SAVE button in the top right corner. Enter a name for the saved statement. If you log out of Oracle Express and log back in you can click on the saved SQL tab and load it for editing or running.</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="02">
-        <h1>KEY Constraints</h1>
-<p>Using the column information for the animals table below, name constraints where applicable at the table level, otherwise name them at the column level. 
-Define the primary key (animal_id).
-The license_tag_number must be unique.
-The admit_date and vaccination_date columns cannot contain null values.</p>
-<p>animal_id NUMBER(6)
-name VARCHAR2(25)
-license_tag_number NUMBER(10)
-admit_date DATE
-adoption_id NUMBER(5),
-vaccination_date DATE</p>
-<p>Use an editor to work on the CREATE TABLE statement before executing the statement in app express to create the animals table.</p>
-<p>Enter one row into the table.</p>
-<p><img src="./img/02.png" alt=""></p>
-<p>Write the syntax to create a foreign key (adoption_id) in the animals table that has a corresponding primary key reference in the adoptions table. Show both the column level and table level syntax.
-Note because you have not created an adoptions table no primary key as yet exists so we don&#39;t add this foreign key at this time.</p>
-<p>What is the effect of setting the foreign key in the ANIMAL table to</p>
-<ul>
-<li>ON DELETE CASCADE</li>
-<li>ON DELETE SET NULL</li>
-</ul>
+        <h1>WHERE CLAUSE</h1>
+<p>Using Global Fast Foods database, retrieve the customer&#39;s first name, last name and address for the customer who uses ID 456.</p>
 
       </div>
      
